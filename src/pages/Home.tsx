@@ -47,7 +47,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero relative w-full h-[70vh] bg-cover bg-center md:h-screen" style={{ backgroundImage: "url('src/img/hero-section.jpg')" }}>
+      <div className="hero relative w-full h-[70vh] bg-cover bg-center md:h-screen" style={{ backgroundImage: "url('img/hero-section.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative flex flex-col justify-center items-center h-full text-white text-center p-6">
           <h1 className="text-5xl font-bold mb-4 animate__animated animate__fadeIn">Multilingual School Unified</h1>
@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         <h2 className="text-3xl font-bold text-center mb-6 ">Company Overview</h2>
 
         <div className="max-w-4xl mx-auto bg-slate-800 shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:bg-slate-900 flex flex-col md:flex-row">
-          <img src="/src/img/msu.png" alt="Description of image" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-4 object-cover" />
+          <img src="/img/msu.png" alt="Description of image" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-4 object-cover" />
           <div className="md:w-2/3">
             <h2 className="text-2xl font-bold text-primary mb-4 text-center">Multilingual School Unified</h2>
             <p className="mb-4 text-white">
