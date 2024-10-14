@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full flex items-center justify-between z-10 transition-all duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-transparent'}`}>
       <div className="flex items-center px-4">
-        <img src="src/img/logo-msu-w.png" alt="Company Logo" className="h-14 mr-0" />
+        <img src="/img/logo-msu-w.png" alt="Company Logo" className="h-14 mr-0" />
         <a href="#home" className='font-bold text-lg text-white '>MS<span className='text-primary'>Unified</span></a>
       </div>
       <div className="relative hidden md:flex md:items-center md:space-x-4 px-6">

@@ -14,7 +14,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl font-semibold text-yellow-500 mb-4 text-center md:text-left">Multilingual School Unified!</h2>
           {/* Image placed here for mobile layout */}
           <div className="md:hidden mb-4">
-            <img src="/src/assets/about.jpg" alt="Company Image" className="w-full h-auto rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105" />
+            <img src="/img/about.jpg" alt="Company Image" className="w-full h-auto rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105" />
           </div>
           <p className="mb-2 text-gray-600">
             Founded in 2019, Multilingual School Unified is dedicated to empowering individuals through language learning. In an increasingly interconnected world, we recognize the growing demand for proficiency in languages such as
@@ -33,7 +33,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className="hidden md:w-1/2 mt-6 md:mt-0 md:block">
-          <img src="/src/assets/about.jpg" alt="Company Image" className="w-full h-auto rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105" />
+          <img src="/img/about.jpg" alt="Company Image" className="w-full h-auto rounded-lg shadow-md transform transition-transform duration-500 hover:scale-105" />
         </div>
       </section>
 
@@ -43,7 +43,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Team Member 1 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl">
-            <img src="/src/assets/john-doe.jpg" alt="John Doe" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <img src="/img/john-doe.jpg" alt="John Doe" className="w-24 h-24 rounded-full mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-800">
               John Doe<span className="text-gray-500 font-light text-lg"> - CEO</span>
             </h3>
@@ -54,7 +54,7 @@ const About: React.FC = () => {
           </div>
           {/* Team Member 2 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl">
-            <img src="/src/assets/jane-smith.jpg" alt="Jane Smith" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <img src="/img/jane-smith.jpg" alt="Jane Smith" className="w-24 h-24 rounded-full mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-800">
               Jane Smith<span className="text-gray-500 font-light text-lg"> - CTO</span>
             </h3>
@@ -65,7 +65,7 @@ const About: React.FC = () => {
           </div>
           {/* Team Member 3 */}
           <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl">
-            <img src="/src/assets/alice-johnson.jpg" alt="Alice Johnson" className="w-24 h-24 rounded-full mx-auto mb-4" />
+            <img src="/img/alice-johnson.jpg" alt="Alice Johnson" className="w-24 h-24 rounded-full mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-gray-800">Alice Johnson</h3>
             <p className="text-gray-500">Head of Lecturers</p>
             <p className="mt-2 text-gray-700">
@@ -97,7 +97,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <div>
-            <img src="/src/assets/culture.jpg" alt="Cultural Event" className="w-full h-auto rounded-lg shadow-md" />
+            <img src="/img/culture.jpg" alt="Cultural Event" className="w-full h-auto rounded-lg shadow-md" />
           </div>
         </div>
 

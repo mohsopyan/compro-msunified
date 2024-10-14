@@ -9,7 +9,7 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Service Item 1: Korean Language Course */}
           <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
-            <img src="/src/assets/korea.jpg" alt="Korean Language Course" className="w-full h-32 object-cover rounded-t-lg" />
+            <img src="/img/korea.jpg" alt="Korean Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">Korean Language Course</h3>
             <p className="mb-4">
               Our Korean Language Course offers a complete learning experience designed for beginners to advanced learners. 
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
 
           {/* Service Item 2: Japanese Language Course */}
           <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
-            <img src="/src/assets/jepang.jpg" alt="Japanese Language Course" className="w-full h-32 object-cover rounded-t-lg" />
+            <img src="/img/jepang.jpg" alt="Japanese Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">Japanese Language Course</h3>
             <p className="mb-4">
               Immerse yourself in the Japanese language with our comprehensive course that covers speaking, reading, and writing.
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
 
           {/* Service Item 3: English Language Course */}
           <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
-            <img src="/src/assets/english.jpg" alt="English Language Course" className="w-full h-32 object-cover rounded-t-lg" />
+            <img src="/img/english.jpg" alt="English Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">English Language Course</h3>
             <p className="mb-4">
               Enhance your English skills with a focus on communication, grammar, and vocabulary tailored to your needs.

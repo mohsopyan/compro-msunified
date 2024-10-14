@@ -90,7 +90,7 @@ const Home: React.FC = () => {
             {/* Team Member 1 */}
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl relative">
               <div className="overflow-hidden rounded-lg">
-                <img src="/src/assets/john-doe.jpg" alt="John Doe" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
+                <img src="/img/john-doe.jpg" alt="John Doe" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">John Doe</h3>
               <p className="text-gray-500">CEO</p>
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
             {/* Team Member 2 */}
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl relative">
               <div className="overflow-hidden rounded-lg">
-                <img src="/src/assets/alice-johnson.jpg" alt="Alice Johnson" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
+                <img src="/img/alice-johnson.jpg" alt="Alice Johnson" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">Alice Johnson</h3>
               <p className="text-gray-500">Head of Lecturers</p>
@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             {/* Team Member 3 */}
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl relative">
               <div className="overflow-hidden rounded-lg">
-                <img src="/src/assets/jane-smith.jpg" alt="Jane Smith" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
+                <img src="/img/jane-smith.jpg" alt="Jane Smith" className="w-full h-40 object-cover transition-transform duration-300 transform hover:scale-110" />
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mt-4">Jane Smith</h3>
               <p className="text-gray-500">CTO</p>
