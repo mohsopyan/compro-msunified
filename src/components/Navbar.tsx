@@ -14,6 +14,10 @@ const Navbar: React.FC = () => {
     setIsScrolled(offset > 50);
   };
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -22,7 +26,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full flex items-center justify-between z-10 transition-all duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full flex items-center justify-between z-10 transition-all duration-300 ${isScrolled ? 'bg-yellow-950 bg-opacity-50 border-b' : 'bg-yellow-950'}`}>
       <div className="flex items-center px-4">
         <img src="/img/logo-msu-w.png" alt="Company Logo" className="h-14 mr-0" />
         <a href="#home" className='font-bold text-lg text-white '>MS<span className='text-primary'>Unified</span></a>
@@ -41,11 +45,11 @@ const Navbar: React.FC = () => {
           {isOpen ? '✖' : '☰'}
         </button>
       </div>
-      <ul className={`flex-col md:hidden ${isOpen ? 'flex' : 'hidden'} absolute right-6 top-full bg-gray-800 w-48 text-center rounded-lg`}>
-        <li><Link className="text-white block p-2" to="/">Home</Link></li>
-        <li><Link className="text-white block p-2" to="/about">About Us</Link></li>
-        <li><Link className="text-white block p-2" to="/services">Services</Link></li>
-        <li><Link className="text-white block p-2" to="/teams">Teams</Link></li>
+      <ul className={`flex-col md:hidden ${isOpen ? 'flex' : 'hidden'} absolute right-0 top-full bg-yellow-950 w-48 p-5 text-center`}>
+        <li><Link className="text-white block p-2 hover:border rounded-lg hover:text-primary" to="/" onClick={handleLinkClick}>Home</Link></li>
+        <li><Link className="text-white block p-2 hover:border rounded-lg hover:text-primary" to="/about" onClick={handleLinkClick}>About Us</Link></li>
+        <li><Link className="text-white block p-2 hover:border rounded-lg hover:text-primary" to="/services" onClick={handleLinkClick}>Services</Link></li>
+        <li><Link className="text-white block p-2 hover:border rounded-lg hover:text-primary" to="/teams" onClick={handleLinkClick}>Teams</Link></li>
       </ul>
     </nav>
   );

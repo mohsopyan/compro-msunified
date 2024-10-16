@@ -47,7 +47,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="hero relative w-full h-[70vh] bg-cover bg-center md:h-screen" style={{ backgroundImage: "url('img/hero-section.jpg')" }}>
+      <div className="hero relative w-full h-[70vh] bg-cover bg-center md:h-screen mt-14" style={{ backgroundImage: "url('img/hero-section.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative flex flex-col justify-center items-center h-full text-white text-center p-6">
           <h1 className="text-5xl font-bold mb-4 animate__animated animate__fadeIn">Multilingual School Unified</h1>
@@ -61,10 +61,10 @@ const Home: React.FC = () => {
       </div>
 
       {/* Company Overview Section */}
-      <section className="p-8 bg-gray-100">
+      <section className="p-8 bg-secondary">
         <h2 className="text-3xl font-bold text-center mb-6 ">Company Overview</h2>
 
-        <div className="max-w-4xl mx-auto bg-slate-800 shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:bg-slate-900 flex flex-col md:flex-row">
+        <div className="max-w-4xl mx-auto bg-yellow-900 shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:bg-yello-950 flex flex-col md:flex-row">
           <img src="/img/msu.png" alt="Description of image" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-4 object-cover" />
           <div className="md:w-2/3">
             <h2 className="text-2xl font-bold text-primary mb-4 text-center">Multilingual School Unified</h2>
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
 
         {/* Section team */}
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-center mt-10 mb-6">Meet Our Team</h2>
+          <h2 className="text-2xl font-bold text-center mt-10 mb-6">Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Team Member 1 */}
             <div className="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:shadow-xl relative">
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="p-8">
+      <section id="services" className="p-8 bg-gray-100">
         <h2 className="text-3xl font-bold text-center mb-6">Language Courses</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="p-8 bg-gray-100">
+      <section className="p-8 bg-secondary">
         <h2 className="text-3xl font-bold text-center mb-6">What Students Say</h2>
         <div className="max-w-4xl mx-auto">
           <Slider {...settings}>

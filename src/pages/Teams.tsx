@@ -41,14 +41,14 @@ const Teams: React.FC = () => {
   }
 
   return (
-    <div className="p-8 bg-gray-100">
+    <div className="p-8">
       {/* Teams Title */}
-      <h1 className="text-4xl font-bold text-center mb-6">Meet Our Team</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 mt-14">Meet Our Team</h1>
 
       {/* Team Members Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {users.map((user, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-6 text-center">
+          <div key={index} className="bg-secondary shadow-lg rounded-lg p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:bg-orange-300 hover:text-white">
             <img
               src={user.picture.large}
               alt={`${user.name.first} ${user.name.last}`}

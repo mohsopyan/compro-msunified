@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <div className="p-8 bg-secondary overflow-y-auto">
       {/* About Us Title */}
-      <h1 className="text-4xl font-bold text-center mb-6 mt-10">About Us</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 mt-14">About Us</h1>
 
       {/* Company History Section */}
       <section className="mb-8 bg-white shadow-lg rounded-lg p-6 md:flex md:items-center md:justify-between">

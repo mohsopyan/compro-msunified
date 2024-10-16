@@ -1,14 +1,24 @@
 import React from 'react';
+import Slider from 'react-slick';
 
 const Services: React.FC = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
   return (
     <div className="p-8 bg-gray-100">
       {/* Service List Section */}
-      <section className="mb-8">
-        <h2 className="text-3xl font-semibold mt-10 mb-8 text-center">What We Offer</h2>
+      <section className="mb-8 mt-14">
+        <h2 className="text-3xl font-bold mt-10 mb-8 text-center">What We Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Service Item 1: Korean Language Course */}
-          <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
+          <div className="bg-secondary shadow-lg rounded-lg p-6 text-black transform transition-transform hover:scale-105 hover:shadow-xl">
             <img src="/img/korea.jpg" alt="Korean Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">Korean Language Course</h3>
             <p className="mb-4">
@@ -25,7 +35,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Service Item 2: Japanese Language Course */}
-          <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
+          <div className="bg-secondary shadow-lg rounded-lg p-6 text-black transform transition-transform hover:scale-105 hover:shadow-xl">
             <img src="/img/jepang.jpg" alt="Japanese Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">Japanese Language Course</h3>
             <p className="mb-4">
@@ -42,7 +52,7 @@ const Services: React.FC = () => {
           </div>
 
           {/* Service Item 3: English Language Course */}
-          <div className="bg-slate-950 shadow-lg rounded-lg p-6 text-white transform transition-transform hover:scale-105 hover:shadow-xl">
+          <div className="bg-secondary shadow-lg rounded-lg p-6 text-black transform transition-transform hover:scale-105 hover:shadow-xl">
             <img src="/img/english.jpg" alt="English Language Course" className="w-full h-32 object-cover rounded-t-lg" />
             <h3 className="text-xl font-semibold mt-4 mb-2 text-primary">English Language Course</h3>
             <p className="mb-4">
@@ -61,29 +71,32 @@ const Services: React.FC = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section>
-        <h2 className="text-3xl font-semibold mb-4 text-center">What Our Customers Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Testimonial Item 1 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <p className="italic mb-4">"The Korean classes were outstanding! I never felt bored, and I learned so much!"</p>
-            <h4 className="font-semibold">- Sarah Johnson</h4>
-            <p className="text-gray-500">Korean Language Student</p>
-          </div>
-
-          {/* Testimonial Item 2 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <p className="italic mb-4">"The Japanese course was very engaging, and the teachers are amazing!"</p>
-            <h4 className="font-semibold">- David Lee</h4>
-            <p className="text-gray-500">Japanese Language Student</p>
-          </div>
-
-          {/* Testimonial Item 3 */}
-          <div className="bg-white shadow-lg rounded-lg p-6">
-            <p className="italic mb-4">"The English course helped me improve my skills significantly. Highly recommend!"</p>
-            <h4 className="font-semibold">- Emma Wang</h4>
-            <p className="text-gray-500">English Language Student</p>
-          </div>
+      <section className="p-8 bg-secondary">
+        <h2 className="text-3xl font-bold text-center mb-6">What Students Say</h2>
+        <div className="max-w-4xl mx-auto">
+          <Slider {...settings}>
+            {/* Testimonial Item 1 */}
+            <div className="bg-white shadow-lg rounded-lg p-9">
+              <p className="italic mb-4">
+                "Learning Korean at Multilingual School Unified has been amazing! The interactive classes and experienced instructors boosted my confidence. Now I enjoy understanding Korean dramas and songs. Highly recommend!"
+              </p>
+              <h4 className="font-semibold text-primary">- Tracy Gibson</h4>
+              <p className="text-gray-500">Korean Language Students</p>
+            </div>
+            {/* Testimonial Item 2 */}
+            <div className="bg-white shadow-lg rounded-lg p-9">
+              <p className="italic mb-4">"I’m thrilled with my progress in the Japanese course at MSU. The classes are interactive and fun, making learning enjoyable. Highly recommend it to anyone interested in Japanese!"</p>
+              <h4 className="font-semibold text-primary">- Jose Rojas</h4>
+              <p className="text-gray-500">Japan Language Students</p>
+            </div>
+            {/* Testimonial Item 3 */}
+            <div className="bg-white shadow-lg rounded-lg p-10">
+              <p className="italic mb-4">"Learning English here has been enjoyable and rewarding. The friendly atmosphere and well-structured lessons keep me motivated. I look forward to every class!"</p>
+              <h4 className="font-semibold text-primary">- Katarina Bekic</h4>
+              <p className="text-gray-500">English Language Students</p>
+            </div>
+            {/* Add more testimonials as needed */}
+          </Slider>
         </div>
       </section>
     </div>
